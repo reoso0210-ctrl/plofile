@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* 共通項目 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: #474747;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.wapper{
+  max-width: 890px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2{
+  display: inline-block;
+  margin-bottom: 60px;
+  border-bottom: solid 1px;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 0 0 16px 0;
+}
+
+/* ヘッダー部分 */
+
+header {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+  margin-left: 26px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-right: 26px;
+}
+
+.aiueo a:hover{
+  opacity: .7;
+}
+
+/* メイン写真 */
+.mainvisual img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  margin: 0 0 72px 0;
+}
+@media (max-width: 600px)
+  {.mainvisual img{
+    height:860px;}
+  }
+
+/* アバウト */
+
+.about-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin: 0 0 72px 0;
+}
+
+.about p{
+  width: calc(15px * 4 * 7);
+}
+
+.about-flex img {
+  border-radius: 50%;
+}
+
+@media (max-width: 600px){
+  .about-flex{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* バイセコー部分 */
+.bicycle{
+  display:flex;
+  gap: 12px;
+  text-align: center;
+
+}
+
+.bicycle-list{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.bicycle li{
+  width: calc(100% / 3);
+}
+
+/* フッター部分 */
+footer{
+  text-align: center;
+  margin: 90px 0 16px 0;
+  color: #999;
+  font-size: 10px;
+}
